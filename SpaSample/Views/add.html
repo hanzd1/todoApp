@@ -1,0 +1,31 @@
+﻿<div class="row jumbotron">
+
+    <h1 class="text-center text-danger">Todo</h1>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form>
+                <div class="form-group">
+                    <label for="inputTitle">Title</label>
+                    <input type="text" placeholder="enter title" class="input-lg form-control" ng-model="txtTitle" />
+                </div>
+                <div class="form-group">
+                    <label for="inputCategory">Category</label>
+                    <input type="text" placeholder="enter category" class="input-lg form-control" ng-model="txtCategory" />
+                </div>
+                <div class="form-group">
+                    <label for="inputDueDate">Due-Date</label>
+                    <input type="text" placeholder="enter due-date" class="input-lg form-control" ng-model="dtpDueDate" />
+                </div>
+                <button ng-click="saveNewTodo()" class="btn btn-info form-control input-lg">Speichern</button>
+                <a class="btn btn-primary form-control input-lg" href="#Home}">Abbrechen</a>
+            </form>
+        </div>
+
+    </div>
+    <div class="row">
+        <h2>{{message}}</h2>
+    </div>
+
+</div>

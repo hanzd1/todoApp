@@ -1,0 +1,40 @@
+﻿<div class="row jumbotron">
+
+    <h1 class="text-center text-danger">Todo</h1>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form>
+                <div class="form-group">
+                    <label for="inputId">Id</label>
+                    <input type="text" ng-readonly="txtNo" class="input-lg form-control" ng-model="txtId" />
+                </div>
+                <div class="form-group">
+                    <label for="inputTitle">Title</label>
+                    <input type="text" placeholder="enter title" ng-readonly="txtRest" class="input-lg form-control" ng-model="txtTitle" />
+                </div>
+                <div class="form-group">
+                    <label for="inputCategory">Category</label>
+                    <input type="text" placeholder="enter category" ng-readonly="txtRest" class="input-lg form-control" ng-model="txtCategory" />
+                </div>
+                <div class="form-group">
+                    <label for="inputDueDate">Due-Date</label>
+                    <input type="text" datetime="yyyy-MM-dd" placeholder="yyyy-MM-dd" class="input-lg form-control" ng-model="dtpDueDate" />
+                </div>
+                <div class="form-group">
+                    <label for="inputCompleted">Completed</label>
+                    <input type="text" ng-readonly="txtNo" class="input-lg form-control" ng-model="txtCompleted" />
+                </div>
+                <button ng-click="saveTodo()" class="btn btn-info form-control input-lg">Speichern</button>
+                <button ng-click="deleteTodo()" class="btn btn-danger form-control input-lg">Löschen</button>
+                <a class="btn btn-primary form-control input-lg" href="#Home}">Abbrechen</a>
+            </form>
+        </div>
+
+    </div>
+    <div class="row">
+        <h2>{{message}}</h2>
+    </div>
+
+</div>
